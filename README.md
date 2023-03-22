@@ -1,3 +1,3 @@
 # hacker-rank
 
-Solves exercises from [hacker-](https://www.hackerrank.com/)
+Solves exercises from [hacker-rank](https://www.hackerrank.com/)

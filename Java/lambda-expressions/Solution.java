@@ -10,33 +10,32 @@ class MyMath {
         return p.check(num);
     }
 
-    public PerformOperation isOdd() {  
-        return (number)->{  
+    public PerformOperation isOdd() {
+        return (number) -> {
             return number % 2 != 0;
         };
     };
 
-    public PerformOperation isPrime() {  
-        return (number)->{
+    public PerformOperation isPrime() {
+        return (number) -> {
             Boolean isPrime = true;
-            if(number < 2 || (number % 2 == 0 && number != 2))
+            if (number < 2 || (number % 2 == 0 && number != 2))
                 isPrime = false;
-            for(int i = 3; i <= Math.sqrt(number); i += 2)
-                if(number % i == 0)
+            for (int i = 3; i <= Math.sqrt(number); i += 2)
+                if (number % i == 0)
                     isPrime = false;
             return isPrime;
         };
     };
 
-    public PerformOperation isPalindrome() {  
-        return (number)->{
+    public PerformOperation isPalindrome() {
+        return (number) -> {
             String numberAsString = "" + number;
 
             int i = 0;
             int n = numberAsString.length();
-            while(i < n / 2) {
-                System.out.println(numberAsString + " " + n + " " + i);
-                if(numberAsString.charAt(i) != numberAsString.charAt(n - i - 1))
+            while (i < n / 2) {
+                if (numberAsString.charAt(i) != numberAsString.charAt(n - i - 1))
                     return false;
                 i++;
             }
@@ -44,7 +43,6 @@ class MyMath {
         };
     };
 }
-  
 
 public class Solution {
 
